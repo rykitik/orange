@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="header-inner">
+        <section class="header-inner">
             <div class="header-left">
                 <span class="header-logo">
                     <a href="#" class="header-logo_link">
@@ -23,19 +23,36 @@
                     </span>
                 </article>
             </div>
-            <div class="header-phone">
-
-            </div>
             <div class="header-right">
+                <div class="header-phone">
+                    <a href="tel:88007078636" class="header-phone__link" aria-label="Контактный телефон">
+                        <span class="header-phone__icon">
+                            <img src="./src/assets/icons/phone.svg" alt="phone">
+                        </span>
+                        <span class="header-phone__title"> +7 (905) 543 23 45 </span>
+                    </a>
+                    </div>
+                <div class="header-search">
+                    <button class="header-search-button">
+                        <img src="./src/assets/icons/search.svg" class="header-search-button__icon" alt="search">
+                    </button>
+                    <div class="header-search-window">
+                        <form action="/search" class="header-search-form">
+                            <h4 class="header-search-title">Что вы ищете?</h4>
+                            <div class="header-search-input">
+                                <input type="search" name="search[filter][keyword]" value="" class="search-window-input" aria-label="Поисковая строка" placeholder="Раковина для ванной комнаты..." />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="header-mobile">
 
+                </div>
             </div>
-            <div class="header-search">
-                
-            </div>
-            <div class="header-mobile">
-
-            </div>
-        </div>
+        </section>
+        <section class="header-overlay">
+            
+        </section>
     </header>
     <main class="main">
 

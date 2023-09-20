@@ -34,7 +34,6 @@ body {
     align-items: center;
     min-height: 64px;
     position: relative;
-    z-index: 20;
 }
 
 .header--home .header-inner {
@@ -51,4 +50,111 @@ body {
     font-size: 18px;
     line-height: 20px;
     color: #939393;
+}
+
+.header-right {
+    margin-left: auto;
+    display: flex;
+    padding-bottom: 4px;
+    padding-right: 20px;
+}
+
+
+.header-search-window {
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    top: 100px;
+    left: 5vw;
+    width: 85vw;
+    height: 20vh;
+}
+
+.header-search-window--show {
+    display: flex;
+}
+
+.header-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 19;
+    transition: visibility 250ms ease-in-out, opacity 250ms ease-in-out;
+}
+
+.header-overlay.header-overlay--visible {
+    width: 100vw;
+    height: 100vh;
+    visibility: visible;
+    opacity: 1;
+}
+
+.header-mobile {
+    display: none;
+}
+
+.header-search-button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 20px;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #494949;
+    border-radius: 2px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 16px;
+}
+
+.header-search-button__icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+}
+
+.header-phone {
+    text-align: middle;
+    display: flex;
+    align-items: center;
+    margin: 0 16px 5px 16px;
+}
+
+.header-phone__title {
+    color: #999999;
+}
+
+.header-phone__icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.header-phone__link {
+    text-decoration: none;
 }
