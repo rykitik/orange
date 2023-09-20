@@ -37,10 +37,13 @@
                         <img src="./src/assets/icons/search.svg" class="header-search-button__icon" alt="search">
                     </button>
                     <div class="header-search-window">
-                        <form action="/search" class="header-search-form">
-                            <h4 class="header-search-title">Что вы ищете?</h4>
-                            <div class="header-search-input">
-                                <input type="search" name="search[filter][keyword]" value="" class="search-window-input" aria-label="Поисковая строка" placeholder="Раковина для ванной комнаты..." />
+                        <form action="/search" class="header-search-window-form">
+                            <h4 class="header-search-window-title">Что вы ищете?</h4>
+                            <div class="header-search-window-input">
+                                <input type="search" name="search[filter][keyword]" value="" class="header-search-window-text-input" aria-label="Поисковая строка" placeholder="Раковина для ванной комнаты..." />
+                            </div>
+                            <div class="header-search-window-button-block">
+                                <button class="header-search-window-button button">Искать</button>
                             </div>
                         </form>
                     </div>
@@ -60,6 +63,7 @@
     <footer class="footer">
 
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./src/scripts/app.js"></script>
 </body>
 </html>
