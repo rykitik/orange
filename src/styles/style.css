@@ -510,6 +510,9 @@ body {
     z-index: 80;
 }
 
+.main-into-slider__left-btn, .main-into-slider__right-btn:hover {
+    cursor: pointer;
+}
 
 /* @media screen and (max-width: 1600px) {
     .main-into-slider__buttons {
