@@ -8,6 +8,8 @@
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
     min-width: 320px;
     min-height: 100vh;
     font-family: "PT Sans", sans-serif;
@@ -79,7 +81,7 @@ body {
     padding: 20px 0px 20px 40px;
     background-color: #2b2c2c;
     position: relative;
-    z-index: 40;
+    z-index: 999999;
 }
 
 .header-logo__link {
