@@ -514,15 +514,12 @@ body {
     cursor: pointer;
 }
 
-/* @media screen and (max-width: 1600px) {
+@media screen and (min-width: 1600px) {
     .main-into-slider__buttons {
-        left: 0;
-        right: 0;
-    } */
-/*    .main-intro-slider__nav {
-        left: 5%;
-    }
-}  */
+        left: -5%;
+        right: -5%
+    } 
+} 
 
 
 /* @media screen and (max-width: 1323px) {
