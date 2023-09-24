@@ -48,6 +48,27 @@
                             </div>
                         </form>
                     </div>
+                    <div class="main-intro-window"  method="post" enctype="multipart/form-data">
+                        <form action="/src/server/send_feedback.php" class="main-intro-window-form">
+                            <h4 class="main-intro-window-title">Форма</h4>
+                            <label for="lastname">Фамилия:</label>
+                            <input type="text" id="lastname" name="lastname" required>
+
+                            <label for="firstname">Имя:</label>
+                            <input type="text" id="firstname" name="firstname" required>
+
+                            <label for="phone">Телефон:</label>
+                            <input type="tel" id="phone" name="phone" required>
+
+                            <label for="email">Электронная почта:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="file">Файл:</label>
+                            <input type="file" id="file" name="file">
+
+                            <button type="submit" class="button">Отправить</button>
+                        </form>
+                    </div>
                 </div>
                 <div class="header-mobile">
                     <!--  Мобильное меню -->
@@ -107,7 +128,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="main-intro-slider__item swiper-slide" style="width: 1317px; opacity: 0; transform: translate3d(-2634px, 0px, 0px); transition-duration: 0ms;">
+                          <div class="main-intro-slider__item swiper-slide">
                             <div class="main-intro-slider__content">
                               <picture>
                                 <source media="(max-width: 1024px)" srcset="./src/assets/duche2-mini.png, ./src/assets/duche2-mini.png 2x">

@@ -14,4 +14,20 @@ jQuery(function($){
 		$('.header-overlay').removeClass('header-overlay--visible');
 	  }
 	});
+
+	$('.main-intro-slider__link, .main-intro-slider__price').on('click', function(e){
+		$('.main-intro-window').addClass('main-intro-window--show');
+		$('.header-overlay').addClass('header-overlay--visible');
+	  });
+	  
+	  $('.main-intro-window').on('click', function(e){
+		e.stopPropagation();
+	  });
+	  
+	  $('body').on('click', function(e){
+		if(e.target !== $('.main-intro-window')[0] && e.target !== $('.main-intro-slider__link')[0] && $('.main-intro-window').hasClass('main-intro-window--show') ){
+			$('.main-intro-window').removeClass('main-intro-window--show');
+		  $('.header-overlay').removeClass('header-overlay--visible');
+		}
+	  });
 });
