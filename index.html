@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orange | Сантехника и мебель</title>
+    <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="./src/styles/style.css">
 </head>
 <body>
@@ -49,16 +50,89 @@
                     </div>
                 </div>
                 <div class="header-mobile">
-
+                    <!--  Мобильное меню -->
                 </div>
             </div>
         </section>
-        <section class="header-overlay">
-            
-        </section>
+        <section class="header-overlay"></section>
     </header>
     <main class="main">
-
+        <div class="main-int">
+            <div class="main-intro">
+                <div class="main-intro-bg"> </div>
+                <article class="main-intro-container">
+                    <h1 class="main-intro-container__title">
+                        Сантехника и мебель
+                        для ванной комнаты
+                    </h1>
+                    <nav class="main-intro-container-nav">
+                        <div class="main-intro-container-nav__item">
+                            <a href="#" class="main-intro-container-nav__link arrow-btn">
+                                <span class="main-intro-container-nav__title"> О компании</span>
+                            </a>
+                        </div>
+                        <div class="main-intro-container-nav__item">
+                            <a href="#" class="main-intro-container-nav__link arrow-btn">
+                                <span class="main-intro-container-nav__title"> О продукции</span>
+                            </a>
+                        </div>
+                        <div class="main-intro-container-nav__item">
+                            <a href="#" class="main-intro-container-nav__link arrow-btn">
+                                <span class="main-intro-container-nav__title"> Каталог товаров</span>
+                            </a>
+                        </div>
+                    </nav>
+                </article>
+                <article class="main-intro-slider swiper-container">
+                    <div class="swiper-wrapper">
+                          <div class="main-intro-slider__item swiper-slide swiper-slide-active">
+                            <div class="main-intro-slider__content">
+                              <picture>
+                                <source media="(max-width: 1024px)" srcset="./src/assets/faucet-mini.png, ./src/assets/faucet-mini.png 2x">
+                                <img src="./src/assets/faucet.png" srcset="./src/assets/faucet.png 2x">
+                              </picture>
+          
+                              <div class="main-intro-slider__price" style="top: 455px;right: 215px">
+                                <a class="main-intro-slider__link button" href="#">Обратная связь</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="main-intro-slider__item swiper-slide">
+                            <div class="main-intro-slider__content">
+                              <picture>
+                                <source media="(max-width: 1024px)" srcset="./src/assets/duche-mini.png, ./src/assets/duche-mini.png 2x">
+                                <img src="./src/assets/duche.png" srcset="./src/assets/duche.png 2x">
+                              </picture>
+                              <div class="main-intro-slider__price" style="top: 455px;right: 215px">
+                                <a class="main-intro-slider__link button" href="#">Обратная связь</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="main-intro-slider__item swiper-slide" style="width: 1317px; opacity: 0; transform: translate3d(-2634px, 0px, 0px); transition-duration: 0ms;">
+                            <div class="main-intro-slider__content">
+                              <picture>
+                                <source media="(max-width: 1024px)" srcset="./src/assets/duche2-mini.png, ./src/assets/duche2-mini.png 2x">
+                                <img src="./src/assets/duche2.png" srcset="./src/assets/duche2.png 2x">
+                              </picture>
+          
+                              <div class="main-intro-slider__price" style="top: 455px;right: 215px">
+                                <a class="main-intro-slider__link button" href="#">Обратная связь</a>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="main-into-slider__buttons">
+                        <img src="./src/assets/icons/left-pag-btn.svg" alt="left" class="main-into-slider__left-btn">
+                        <img src="./src/assets/icons/right-pag-btn.svg" alt="right" class="main-into-slider__right-btn">
+                    </div>
+                    <div class="main-intro-slider__nav">
+                            <div class="main-top__line main-top__line--active"></div>
+                            <div class="main-top__line"></div>
+                            <div class="main-top__line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="footer">
 
