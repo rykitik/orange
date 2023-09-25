@@ -31,12 +31,34 @@ jQuery(function($){
 			}
 		});
 
+		// СЛАЙДЕР
+        var slides = $('.swiper-wrapper .swiper-slide');
+        var currentSlide = 0;
+
+        function showSlide(index) {
+            slides.hide();
+            slides.eq(index).show();
+        }
+
+        showSlide(currentSlide);
+
+        // Обработчики событий для кнопок
+
 		$('.main-into-slider__left-btn').on('click', function(e){
 			console.log('left');
+			currentSlide--;
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1;
+            }
+            showSlide(currentSlide);
 		});
 	
 		$('.main-into-slider__right-btn').on('click', function(e){
-			console.log('right');
+			currentSlide++;
+            if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+            showSlide(currentSlide);
 		});
 	});
 });
