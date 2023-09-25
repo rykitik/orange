@@ -32,8 +32,9 @@ jQuery(function($){
 		});
 
 		// СЛАЙДЕР
-        var slides = $('.swiper-wrapper .swiper-slide');
-        var currentSlide = 0;
+        let slides = $('.swiper-wrapper .swiper-slide');
+		let topLines = $('.main-intro-slider__nav .main-top__line');
+        let currentSlide = 0;
 
         function showSlide(index) {
             slides.hide();
@@ -45,20 +46,23 @@ jQuery(function($){
         // Обработчики событий для кнопок
 
 		$('.main-into-slider__left-btn').on('click', function(e){
-			console.log('left');
+			topLines.eq(currentSlide).removeClass('main-top__line--active');
 			currentSlide--;
             if (currentSlide < 0) {
                 currentSlide = slides.length - 1;
             }
             showSlide(currentSlide);
+			topLines.eq(currentSlide).addClass('main-top__line--active');
 		});
 	
 		$('.main-into-slider__right-btn').on('click', function(e){
+			topLines.eq(currentSlide).removeClass('main-top__line--active');
 			currentSlide++;
             if (currentSlide >= slides.length) {
                 currentSlide = 0;
             }
             showSlide(currentSlide);
+			topLines.eq(currentSlide).addClass('main-top__line--active');
 		});
 	});
 });
