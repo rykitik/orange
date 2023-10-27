@@ -63,7 +63,7 @@ $(document).ready(function() {
 	});
   
 	$('body').on('click', function(e) {
-	  if (e.target !== $('.main-intro-window')[0] && !$(e.target).hasClass('main-intro-slider__link')) {
+	  if (e.target !== $('.main-intro-window')[0] && e.target !== $headerSearchButton[0] && !$(e.target).hasClass('main-intro-slider__link')) {
 		$('.main-intro-window').removeClass('main-intro-window--show');
 		$headerOverlay.removeClass('header-overlay--visible');
 	  }

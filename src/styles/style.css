@@ -131,9 +131,6 @@ body {
     left: 0;
     width: 0;
     height: 0;
-    display: block;
-    visibility: hidden;
-    opacity: 0;
     background-color: rgba(0,0,0,0.3);
     z-index: 19;
     transition: visibility 250ms ease-in-out, opacity 250ms ease-in-out;
@@ -142,8 +139,6 @@ body {
 .header-overlay.header-overlay--visible {
     width: 100vw;
     height: 100vh;
-    visibility: visible;
-    opacity: 1;
 }
 
 .header-mobile {
