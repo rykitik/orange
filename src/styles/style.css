@@ -486,6 +486,7 @@ body {
     height: 2px;
     background-color: #575757;
     margin-right: 10px;
+    cursor: pointer;
 } 
 
 .main-top__line--active, .main-top__line:hover {
